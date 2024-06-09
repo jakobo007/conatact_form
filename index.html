@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+
+  <section class="wrapper">
+
+    <h1>Contact Us</h1>
+    
+    <form action="" id="contact-form">
+
+      <div class="form-item">
+        <div class="name_field">
+          <div>
+            <label for="first_name">First Name *</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <p class="form-alert">This field is required</p>
+          </div>
+          <div>
+            <label for="last_name">Last Name *</label>
+            <input type="text" id="last_name" name="last_name">
+            <p class="form-alert">This field is required</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-item">
+        <label for="email">Email Address *</label>
+        <input type="email" name="email" id="email">
+        <p class="form-alert">Please enter a valid email address</p>
+      </div>
+
+      <div class="form-item">
+        <label for="query_type">Query Type *</label>
+        <div class="query">
+          <section>
+            <input type="radio" name="query_type" id="general">
+            <label for="general">General Enquiry</label>
+          </section>
+          <section>
+            <input type="radio" name="query_type" id="support">
+            <label for="support">Support Request</label>
+          </section>
+        </div>
+        <p class="form-alert">Please select a query type</p>
+      </div>
+
+      <div class="form-item">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+      </div>
+
+      <div class="form-item">
+        <div>
+          <input type="checkbox" name="consent" id="consent">
+          <label for="consent">I consent to being contacted by the team</label>
+        </div>
+        <p class="form-alert">To submit this form, please consent to being contacted</p>
+      </div>
+
+      <button type="button">Submit</button>
+
+    </form>
+
+  </section>
+
+  <div class="success_msg" id="success_msg">
+    <div class="message-header">
+      <img src="./assets/images/icon-success-check.svg" alt="">
+      Message Sent!
+    </div>
+    <p>Thanks for completing the form. We'll be in touch</p>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+</html>
